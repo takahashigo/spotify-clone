@@ -10,7 +10,6 @@ interface SliderProps {
 
 const Slider: FC<SliderProps> = ({ value = 1, onChange }) => {
   const handleChange = (newValue: number[]) => {
-    // TODO: ?.とは
     onChange !== undefined && onChange(newValue[0]);
   };
 
